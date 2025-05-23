@@ -17,7 +17,7 @@ const EncryptDecryptForm = () => {
     setError("");
     setCopied(false);
     try {
-      const response = await axios.post("/encrypt-decrypt", {
+      const response = await axios.post("https://go-encrypt-decrypt-aes.vercel.app/encrypt-decrypt", {
         enc_salt: salt,
         value: value,
         action: action,
